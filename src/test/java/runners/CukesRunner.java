@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "step_definitions",
         dryRun = true  //"TRUE"it will not Trigger our driver, and we are using this just to get step_definition classes
-                        //"FALSE" will run uor test
+                        //"FALSE" will run our test the steps will be executed
 )
 
 public class CukesRunner {
