@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumber-report.html",
         features = "src/test/resources/features",
         glue = "step_definitions",
-        dryRun = false,
-        tags = " @AutomationPractice"
+        dryRun = true  //"TRUE"it will not Trigger our driver, and we are using this just to get step_definition classes
+                        //"FALSE" will run uor test
 )
 
 public class CukesRunner {
