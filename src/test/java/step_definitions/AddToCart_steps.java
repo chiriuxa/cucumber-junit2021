@@ -1,5 +1,6 @@
 package step_definitions;
 
+import Utilities.Config;
 import Utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -20,7 +21,7 @@ public class AddToCart_steps {
 
     @Given("I am in the Your Logo web page")
     public void i_am_in_the_your_logo_web_page() {
-       Driver.getDriver().get("http://automationpractice.com/index.php");
+       Driver.getDriver().get(Config.getProperty("url"));
     }
 
 
