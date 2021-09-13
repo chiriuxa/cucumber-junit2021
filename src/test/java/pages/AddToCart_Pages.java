@@ -24,4 +24,9 @@ public class AddToCart_Pages {
 
     @FindBy (id = "total_product_price_1_1_0")
     public WebElement quantityPrice;
+
+    @FindBy (xpath = "//*[@class=\"button btn btn-default standard-checkout button-medium\"]")
+    public WebElement proceedToCheckOutButton;
+
+
 }
