@@ -26,3 +26,11 @@ Feature: Verify the carts price
       And write the email of the friend
       And click on the send button
       Then confirm the message appears on the screen
+
+
+
+
+
+
+
+
