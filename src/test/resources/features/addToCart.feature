@@ -2,29 +2,29 @@
 @AutomationPractice
 Feature: Verify the carts price
 
-  @addToCard
+
+
+  @addToCardAndDeleteFromCart4Items
   Scenario: Verify the carts price
   Given I am in the Your Logo web page
-    And Faded Short Sleeve T-shirts to hover over it
-    When i click on Add to cart button
-    And i click on proceed to checkout  button
-    Then i should see the total price is correct
+    And hover over element1
+    And i click on Add to cart button item1
+    And press continue shopping button
+    And  hover over element2
+    And i click on Add to cart button item2
+    And press continue shopping button
+    And hover over element3
+    And i click on Add to cart button item3
+    And press continue shopping button
+    And hover over element4
+    And Pressing on Proceed to Checkout Button
+    And I verify if user is on right page an SHOPPING-CART SUMMARY text is displayed
 
-  @ProceedToCheckout
-  Scenario: Checkout after adding to cart
-    Given Pressing on Proceed to Checkout Button
-    When Checking if create an account is displayed
-    When Entering an email address in the email address box
-    And Press Create an account button
-    And Checking if we are on right page
-    When Filling up personal information name
-    When Filling up personal information last name
-    When Filling up personal information password
-    When Entering date of birth
-    When Entering address
-    When  Entering City
-    When  Selecting State
-    When Entering zip code
-    When Entering Phone number
-    When Assigning alis address
-    And Pressing register Button
+    And I press delete from cart button for item1
+    And I press delete from cart button for item2
+    And I press delete from cart button for item3
+    And I press delete from cart button for item4
+
+    Then I check if shopping cart empty text is displayed
+
+
